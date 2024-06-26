@@ -1,0 +1,8 @@
+\c retirementplanner
+
+
+
+
+delete from task;
+
+

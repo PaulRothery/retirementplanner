@@ -1,0 +1,2 @@
+INSERT INTO task (name, last_completed_date, target_date, repeat_cycle, creation_date, completed)
+VALUES('test', null, '2024-07-20', 0, '2024-03-09', false);

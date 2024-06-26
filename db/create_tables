@@ -1,0 +1,32 @@
+DROP TABLE task;
+CREATE TABLE task(
+    id INTEGER PRIMARY KEY,
+	name VARCHAR (50) NOT NULL,
+	comments VARCHAR (1000),
+	last_completed_date DATE,
+	expiration_date DATE,
+	target_date DATE,
+	repeat_cycle INTEGER,
+	creation_date DATE DEFAULT CURRENT_DATE,
+	completed BOOLEAN
+);
+
+
+DROP TABLE meal;
+CREATE TABLE meal(
+    id INTEGER PRIMARY KEY,
+	name VARCHAR (50) NOT NULL,
+	reference VARCHAR (200),
+	instructions VARCHAR (1000),
+	rating INTEGER,
+	ease_of_prep INTEGER,
+	last_used_date DATE
+);
+
+DROP TABLE sauce;
+CREATE TABLE sauce(
+    id INTEGER PRIMARY KEY,
+	name VARCHAR (50) NOT NULL,
+	instructions VARCHAR (1000),
+	last_used_date DATE
+);
